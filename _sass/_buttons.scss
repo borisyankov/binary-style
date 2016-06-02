@@ -23,21 +23,17 @@ input[type=button],
 .btn-primary {
     border: 0;
     color: white;
-    background: $COLOR_BRAND_ORANGE;
-    @include button-border(darken($COLOR_BRAND_ORANGE, 10%));
+    font-weight: bold;
+    background: $COLOR_GREEN;
     &:focus {
         outline: none;
     }
     &:not(:disabled):hover {
-        @include button-border(darken($COLOR_BRAND_ORANGE, 15%));
+        background: darken($COLOR_GREEN, 10%);
         &:active {
-            @include button-outline(darken($COLOR_BRAND_ORANGE, 15%));
         }
     }
     &:active {
-        position: relative;
-        top: 1px;
-        @include button-outline(darken($COLOR_BRAND_ORANGE, 10%));
     }
 }
 
@@ -53,9 +49,6 @@ button:disabled {
     opacity: .75;
     color: darken($COLOR_GRAY, 20%);
     background: $COLOR_GRAY;
-    &:disabled {
-        @include button-border(darken($COLOR_GRAY, 10%));
-    }
 }
 
 button::-moz-focus-inner, input::-moz-focus-outer {
