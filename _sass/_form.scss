@@ -76,7 +76,6 @@ select {
 }
 
 select,
-.picker__input,
 .date-picker,
 .down-arrow {
     background-position: right center;
@@ -90,16 +89,6 @@ label {
     line-height: 2;
 }
 
-.thin-form {
-    max-width: 320px;
-    margin: auto;
-}
-
-.thin-form input,
-.thin-form select {
-    width: 100%;
-}
-
 .dob {
     display: flex;
 }
@@ -107,10 +96,6 @@ label {
 .dob select {
     border: none;
     flex: 1;
-}
-
-#mrms {
-    flex: initial;
 }
 
 legend {
